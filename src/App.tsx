@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState } from 'react'
-
+import TodoList from './teee/TodoList';
+import Task from './teee/Task';
 function App() {
 
-  const onKeyDownCallback = (ev: React.KeyboardEvent<HTMLInputElement>) => {
-    /* check pressing enter key here */
-  }
+  
+  
 
   return (
     <div>
@@ -17,20 +17,17 @@ function App() {
       </div>
 
       {/* todo section */}
-      <div className='mx-auto max-w-4xl'>
+      <div >
 
-        {/* task input and add button */}
-        <div className='flex space-x-1'>
-          <input className='border border-gray-400 w-full text-2xl'
-            onKeyDown={onKeyDownCallback} ></input>
-          <button className='border border-gray-400 w-8 font-bold'>+</button>
-        </div>
+        <TodoList></TodoList>
+       
+        
 
         {/* tasks section */}
         <div>
           {/* task example */}
           {/* Please convert this into a task component */}
-          <div
+          {/* <div
             className="flex justify-between h-8 items-center py-6 border-b"
           >
             <span className="text-2xl"> I am a task </span>
@@ -38,10 +35,10 @@ function App() {
               <button className="bg-green-400 w-24 text-2xl" >Done</button>
               <button className="bg-red-400 w-24 text-2xl" >Delete</button>
             </div>
-          </div>
+          </div> */}
 
           {/* another task example */}
-          <div
+         {/*  <div
             className="flex justify-between h-8 items-center py-6 border-b"
           >
             <span className="text-2xl"> I am another task </span>
@@ -49,14 +46,15 @@ function App() {
               <button className="bg-green-400 w-24 text-2xl" >Done</button>
               <button className="bg-red-400 w-24 text-2xl" >Delete</button>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>
-
+      
       {/* footer section */}
       <p className='text-center text-gray-400'> Copyright © 2021 </p>
     </div>
+
   );
 }
 
