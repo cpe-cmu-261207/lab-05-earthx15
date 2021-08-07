@@ -1,11 +1,8 @@
 import React from 'react';
-import { useState } from 'react'
+import { useState } from 'react';
 import TodoList from './teee/TodoList';
-import Task from './teee/Task';
+import './App.css'
 function App() {
-
-  
-  
 
   return (
     <div>
